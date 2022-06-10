@@ -110,7 +110,7 @@ display:flex:
 justify-content:center;
 font-size:14px;
 background-color:white;
-padding: 20px 0px;
+/* padding: 20px 0px; */
 @media screen and (max-width: 765px) {
   font-size:13px;
   }
@@ -129,7 +129,7 @@ const Last = styled.div`
   justify-content: center;
   color: gray;
   margin: 20px 0px;
-  padding: 10px;
+
   text-align: center;
 `;
 const Address = styled.div`

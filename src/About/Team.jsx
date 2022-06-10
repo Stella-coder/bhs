@@ -54,8 +54,8 @@ const Image = styled.img`
     transition: all 350ms;
   }
   @media screen and (max-width: 765px) {
-    height: 50%;
-    width: 35%;
+    height: 150px;
+    width: 150px;
     border-radius: 50px;
   }
 `;

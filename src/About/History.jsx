@@ -53,35 +53,35 @@ const History = () => {
 
         <Image src={img} />
       </Story>
-      <Fade>
-        <Founder>
-          <FText>
-            <Wrap>
-              <Text2>Founder's Vision</Text2>
-              <SText1>
-                I see a lot of children & young adults from Broken Homes who are
-                ready and willing to become a better version of themselves. We
-                are raising an army of survivors who are Self-Aware, Confident
-                and Determined. We are changing the narrative about us,
-                spreading love, showing people that having healthy marriages is
-                possible, being successful is possible, our environments or
-                parents failed marriages doesn’t define us
-              </SText1>
-              <SText2>
-                Majority of kids found on the streets are from dysfunctional
-                families, we want to remove them from the streets and invest in
-                their education. We seek to provide career & business
-                opportunities for the adults & single parents We seek to conduct
-                sensitization workshops and provide resources to make sure they
-                are mentally sound & productive. But we can’t do this alone, we
-                need you.
-              </SText2>
-            </Wrap>
-          </FText>
+      {/* <Fade> */}
+      <Founder>
+        <FText>
+          <Wrap>
+            <Text2>Founder's Vision</Text2>
+            <SText1>
+              I see a lot of children & young adults from Broken Homes who are
+              ready and willing to become a better version of themselves. We are
+              raising an army of survivors who are Self-Aware, Confident and
+              Determined. We are changing the narrative about us, spreading
+              love, showing people that having healthy marriages is possible,
+              being successful is possible, our environments or parents failed
+              marriages doesn’t define us
+            </SText1>
+            <SText2>
+              Majority of kids found on the streets are from dysfunctional
+              families, we want to remove them from the streets and invest in
+              their education. We seek to provide career & business
+              opportunities for the adults & single parents We seek to conduct
+              sensitization workshops and provide resources to make sure they
+              are mentally sound & productive. But we can’t do this alone, we
+              need you.
+            </SText2>
+          </Wrap>
+        </FText>
 
-          <FImage src={img2} />
-        </Founder>
-      </Fade>
+        <FImage src={img2} />
+      </Founder>
+      {/* </Fade> */}
 
       <TeamHeader>Our Team</TeamHeader>
       <TeamHolder>
@@ -202,7 +202,7 @@ const TeamHolder = styled.div`
 
 const Container = styled.div`
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100; */
   z-index: 10000;
   background-color: #fbf7f7;
   padding-top: 85px;
@@ -223,6 +223,9 @@ const Text2 = styled.div`
   margin-top: 15px;
   border-bottom: 2px solid black;
   padding-bottom: 10px;
+  @media screen and (max-width: 765px) {
+    font-size: 30px;
+  }
 `;
 
 const Wrap = styled.div`
@@ -236,7 +239,7 @@ const Story = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   width: 100%;
 
   /* align-items: center; */
@@ -246,6 +249,7 @@ const BrandStory = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 
   @media screen and (max-width: 765px) {
     width: 90%;
@@ -287,14 +291,11 @@ const Founder = styled.div`
   align-items: center;
   margin-top: 100px;
   width: 100%;
-  height: 100%;
-
-  /* margin-left: 80px; */
 `;
 const FText = styled.div`
   width: 550px;
-  /* min-height: 700px; */
-  /* height: 100%; */
+  min-height: 700px;
+  height: 100%;
   background-color: white;
   z-index: 1;
   position: absolute;
@@ -303,10 +304,13 @@ const FText = styled.div`
   justify-content: center;
   padding: 20px 0px;
   font-size: 30px;
+
   @media screen and (max-width: 765px) {
     right: 30px;
     width: 80%;
-    height: 100%auto;
+    height: 100%;
+    background-color: red;
+
     /* align-items: center; */
   }
 `;
